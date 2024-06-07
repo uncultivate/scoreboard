@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scoreboard</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div id="playerSelection" class="player-selection">
+        <h2>Select Players</h2>
+        <div class="player-list">
+            <div class="player" data-id="0">Annabelle</div>
+            <div class="player" data-id="1">Dave</div>
+            <div class="player" data-id="2">Helga</div>
+            <div class="player" data-id="3">Julzey</div>
+            <div class="player" data-id="4">Matt</div>
+            <div class="player" data-id="5">Meg</div>
+            <div class="player" data-id="6">Richard</div>
+            <div class="player" data-id="7">Rob</div>
+        </div>
+        <button id="startGame">Start Game</button>
+    </div>
+
+    <div id="gameScreen" class="hidden">
+        <div class="scoreboard">
+            <div class="column" id="player1">
+                <div class="name"></div>
+                <div class="score">0</div>
+                <div class="graphic"></div>
+            </div>
+            <div class="column" id="player2">
+                <div class="name"></div>
+                <div class="score">0</div>
+                <div class="graphic"></div>
+            </div>
+            <div class="column" id="player3">
+                <div class="name"></div>
+                <div class="score">0</div>
+                <div class="graphic"></div>
+            </div>
+            <div class="column" id="player4">
+                <div class="name"></div>
+                <div class="score">0</div>
+                <div class="graphic"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <label>
+                <input type="checkbox" id="expertRound" checked> Expert Round
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

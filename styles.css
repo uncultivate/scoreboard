@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.player-selection {
+    text-align: center;
+}
+
+.player-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.player {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.player.selected {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 50px; /* Increased gap between columns */
+}
+
+.column {
+    text-align: center;
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+    font-size: 48px;
+    margin-bottom: 20px;
+    background-color: black;
+    border: 8px solid grey;
+    padding: 10px;
+}
+
+.score {
+    font-size: 128px;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    margin-bottom: 40px;
+    background-image: url('assets/img/metal_bg.jpg'); /* Updated path to the texture image */
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.805); /* Add shadow to the number font */
+
+    -webkit-text-stroke: 3px red;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: grey; /* Fallback background color */
+}
+
+.graphic img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.highlight {
+    border: 6px solid white;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
